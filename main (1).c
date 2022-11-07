@@ -1,3 +1,8 @@
+// Samith Shripad Hegde
+// 201ME349
+// CS252 Assignment
+// Question No. 4.24
+
 #include <stdio.h>
 #include <string.h>
 #include <pthread.h>
