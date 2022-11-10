@@ -24,3 +24,6 @@ When this thread has exited, the parent thread will calculate and output the est
 It is worth experimenting with the number of random points generated. 
 As a general rule, the greater the number of points, the closer the approximation to π.
 
+
+Credits: SeanStaz
+https://github.com/SeanStaz/monteCarloMethod.c
