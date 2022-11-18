@@ -13,7 +13,7 @@ int i         = 0;
 int n = 0;
 int totalPts  = 0;
 
-void *count(void *X)
+void * count()
 { 
     /* initialize random numbers */
     for (i=0; i < n; i++)
