@@ -9,13 +9,12 @@
 #include <math.h>
 #include <stdlib.h>
 
-int i         = 0;	
+int i = 0;	
 int n = 0;
-int totalPts  = 0;
+int totalPts = 0;
 
 void * count()
 { 
-    /* initialize random numbers */
     for (i=0; i < n; i++)
     {	
         double X = (double)rand() / RAND_MAX;
@@ -36,7 +35,7 @@ int main()
 
     do
 	{
-        printf("Enter the number of points you would like to generate: \n");
+        printf("Number of random points to be generated: \n");
         scanf("%d", &n);  	
 	}while (n <= 0);
   
@@ -45,6 +44,6 @@ int main()
     
     double points = 4.0 * totalPts;
     double pi = points / n;
-    printf("The approximate value of pi for the (%d) points is: %f \n", n, pi);  
+    printf("The approximate value of pi for (%d) number of random points is: %f \n", n, pi);  
     return 0;
 }
