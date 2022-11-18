@@ -1,0 +1,23 @@
+Samith Hegde
+201ME349
+CS252 Assignment
+Question 4.24
+
+The function count() uses the rand() function to generate random coordinates. Dividing it by RAND_MAX() makes all the generated random numbers to be between 0 and 1.
+If the distance of point from the origin < 1, the variable totalpts increments.
+
+In the main function, srand(time(NULL)) is used to create a seed for random numbers to be generated. 
+pthread_t thread creates a variable to store the value of thread identifier. 
+At this moment, no value is assigned to the variable.
+
+Then the program takes user input for the number of points to be generated.
+
+pthread_create() creates a new thread in the function that is passed an argument to it (the count() function). 
+'thread' is passed as the argument which stores the thread identifier.
+Then NULL is passed as second attribute to set attributes of new thread created to default (attributes can be scheduling information, stack size, etc). 
+count() function is third attribute, where the child thread will start running. The fourth attribute is NULL, because no integer parameter was provided on the command line.
+Once pthread_create() runs, the new thread runs inside count(). 
+The count() function calculates the number of random points generated that fall inside the circle of radius 1. The value n is the total number of points in the square.
+pthread_join() waits for the child thread to finish executing and update data. It makes the parent thread wait. 
+NULL is passed as second attribute because no return value from the child thread is expected.
+Then the approximate value of pi is obtained from the given calculations.
